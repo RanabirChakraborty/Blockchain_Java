@@ -1,0 +1,20 @@
+package chain;
+
+import java.util.ArrayList;
+
+public class BlockChainProg {
+
+	public static void main(String[] args) {
+		
+		//demonstarte a series of blocks in a chain
+		
+		ArrayList<Block> blockChain = new ArrayList<Block>();
+		
+		String[] initialValues = {"X has $20, Y has $10"};
+		Block firstBlock = new Block(initialValues, 0);
+		blockChain.add(firstBlock);
+		System.out.println("First Block is"+ firstBlock.toString());
+		System.out.println("The blockChain is"+ blockChain.toString());
+	}
+
+}
