@@ -10,16 +10,11 @@ public class BlockChainProg {
 
 		ArrayList<Block> blockChain = new ArrayList<Block>();
 
-		// first Block
+		// first Block / genesis block
 		String[] initialValues = { "X has $20, Y has $10" };
 		Block firstBlock = new Block(initialValues, 0);
-		int previousBlockHash = 0;
-		if (previousBlockHash != 0) {
-			System.out.println("You have changed something in the block.");
-		} else {
-			blockChain.add(firstBlock);
-			System.out.println("First Block is" + firstBlock.toString());
-		}
+		blockChain.add(firstBlock);
+		System.out.println("First Block is" + firstBlock.toString());
 
 		// second Block
 
