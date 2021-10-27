@@ -14,17 +14,17 @@ public class BlockChainProg {
 		String[] initialValues = { "X has $20, Y has $10" };
 		Block firstBlock = new Block(initialValues, 0);
 		blockChain.add(firstBlock);
-		System.out.println("First Block is" + firstBlock.toString());
+		System.out.println("First Block is " + firstBlock.toString());
 
 		// second Block
 
 		String[] secondValues = { "X gives Y $5. X has $15, Y has $15" };
 		Block secondBlock = new Block(secondValues, firstBlock.getBlockHash());
 		if (firstBlock.getBlockHash() != -1567449644) {
-			System.out.println("You have changed something in the block.");
+			System.out.println("Warning! You have changed something in the block.");
 		} else {
 			blockChain.add(secondBlock);
-			System.out.println("Second Block is" + secondBlock.toString());
+			System.out.println("Second Block is " + secondBlock.toString());
 		}
 
 		// third Block
@@ -32,10 +32,10 @@ public class BlockChainProg {
 		String[] thirdValues = { "Y gives X $10. X has $25, Y has $5" };
 		Block thirdBlock = new Block(thirdValues, secondBlock.getBlockHash());
 		if (secondBlock.getBlockHash() != 695200409) {
-			System.out.println("You have changed something in the block.");
+			System.out.println("Warning! You have changed something in the block.");
 		} else {
 			blockChain.add(thirdBlock);
-			System.out.println("third Block is" + thirdBlock.toString());
+			System.out.println("third Block is " + thirdBlock.toString());
 		}
 
 		// print the whole blockchain

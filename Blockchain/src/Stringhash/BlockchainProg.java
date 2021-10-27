@@ -6,9 +6,9 @@ public class BlockchainProg {
 
 		// hashing concept
 
-		String today = "Today I have my Tech talk";
-		int hashcode = today.hashCode();
+		String today_work = "Today I have my Tech talk";
+		int hashcode = today_work.hashCode();
 
-		System.out.println("Today is " + today + ", which hashcode is " + hashcode);
+		System.out.println("Today is " + today_work + ", which hashcode is " + hashcode);
 	}
 }
